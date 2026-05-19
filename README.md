@@ -55,7 +55,7 @@ See [`deploy/`](/deploy) for a compose snippet and a Traefik + Authentik example
 make build          # builds web + binary
 make run            # runs on 127.0.0.1:8099 (override MAIL_CONTAINER/DOCKER_HOST)
 # or, with live reload of the UI:
-cd web && npm run dev   # proxies /api to 127.0.0.1:8099
+cd web && bun run dev   # proxies /api to 127.0.0.1:8099
 ```
 
 ## Contributing

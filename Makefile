@@ -2,8 +2,8 @@
 
 # Build the SvelteKit frontend into the Go embed directory.
 web:
-	cd web && npm ci || (cd web && npm install)
-	cd web && npm run build
+	cd web && bun install --frozen-lockfile
+	cd web && bun run build
 
 # Build the single binary (frontend must be built first).
 build: web
