@@ -1,0 +1,24 @@
+* admin@example.com ( 474M / ~ ) [0%]
+    [ aliases -> sales@example.com, postmaster@example.com, info@example.com ]
+
+* store@example.com ( 0 / ~ ) [0%]
+
+* git@example.com ( 0 / ~ ) [0%]
+
+* media@example.com ( 0 / ~ ) [0%]
+
+* metrics@example.com ( 0 / ~ ) [0%]
+
+* social@example.com ( 0 / ~ ) [0%]
+
+* photos@example.com ( 0 / ~ ) [0%]
+
+* chat@example.com ( 0 / ~ ) [0%]
+
+* admin@example.org ( 112K / ~ ) [0%]
+
+* voice@example.org ( 0 / ~ ) [0%]
+
+* auth@example.org ( 0 / ~ ) [0%]
+
+* code@example.org ( 0 / ~ ) [0%]

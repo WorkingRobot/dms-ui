@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" class="%sveltekit.theme%">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="robots" content="noindex" />
+		<title>DMS Admin</title>
+		<script>
+			// Apply persisted theme before paint to avoid a flash.
+			try {
+				const t = localStorage.getItem('dms-theme');
+				if (t === 'dark' || (!t && matchMedia('(prefers-color-scheme: dark)').matches))
+					document.documentElement.classList.add('dark');
+			} catch {}
+		</script>
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>

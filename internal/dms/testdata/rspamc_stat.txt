@@ -1,0 +1,27 @@
+Results for command: stat (0.148 seconds)
+Messages scanned: 6760
+Messages with action reject: 41, 0.61%
+Messages with action soft reject: 0, 0.00%
+Messages with action rewrite subject: 0, 0.00%
+Messages with action add header: 61, 0.90%
+Messages with action greylist: 111, 1.64%
+Messages with action no action: 6547, 96.85%
+Messages treated as spam: 102, 1.51%
+Messages treated as ham: 6658, 98.49%
+Messages learned: 10652
+Connections count: 0
+Control connections count: 3
+Average scan time: 6.164 sec
+Pools allocated: 5524
+Pools freed: 5496
+Bytes allocated: 28382928
+Memory chunks allocated: 121
+Shared chunks allocated: 3
+Chunks freed: 0
+Oversized chunks: 959
+Fuzzy hashes in storage "rspamd.com": 2017287076
+Fuzzy hashes stored: 2017287076
+Statfile: BAYES_SPAM type: redis; length: 0; free blocks: 0; total blocks: 0; free: 0.00%; learned: 81; users: 1; languages: 0
+Statfile: BAYES_HAM type: redis; length: 0; free blocks: 0; total blocks: 0; free: 0.00%; learned: 10571; users: 1; languages: 0
+Total learns: 10652
+

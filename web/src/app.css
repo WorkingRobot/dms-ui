@@ -1,0 +1,86 @@
+@import 'tailwindcss';
+
+/* Dark mode driven by a `.dark` class on <html> (set in app.html / store). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Neutral palette + accent, mirroring the Pocket ID / AdGuard aesthetic:
+   calm grayscale surfaces, a single indigo accent, soft borders, rounded
+   cards. Values are HSL channels consumed via hsl(var(--x)). */
+:root {
+	--background: 210 20% 99%;
+	--foreground: 215 28% 14%;
+	--muted: 210 24% 95%;
+	--muted-foreground: 215 14% 42%;
+	--card: 0 0% 100%;
+	--border: 214 20% 89%;
+	--input: 214 20% 86%;
+	--accent: 172 66% 38%;
+	--accent-foreground: 0 0% 100%;
+	--sidebar: 210 24% 97%;
+	--success: 158 64% 40%;
+	--danger: 0 70% 50%;
+	--warning: 35 92% 48%;
+	--ring: 172 66% 38%;
+}
+
+.dark {
+	--background: 215 30% 9%;
+	--foreground: 210 20% 96%;
+	--muted: 215 24% 15%;
+	--muted-foreground: 213 16% 62%;
+	--card: 215 28% 12%;
+	--border: 215 22% 20%;
+	--input: 215 22% 24%;
+	--accent: 170 64% 46%;
+	--accent-foreground: 215 35% 8%;
+	--sidebar: 215 30% 10%;
+	--success: 158 60% 48%;
+	--danger: 0 70% 60%;
+	--warning: 35 92% 56%;
+	--ring: 170 64% 46%;
+}
+
+@theme inline {
+	--color-background: hsl(var(--background));
+	--color-foreground: hsl(var(--foreground));
+	--color-muted: hsl(var(--muted));
+	--color-muted-foreground: hsl(var(--muted-foreground));
+	--color-card: hsl(var(--card));
+	--color-border: hsl(var(--border));
+	--color-input: hsl(var(--input));
+	--color-accent: hsl(var(--accent));
+	--color-accent-foreground: hsl(var(--accent-foreground));
+	--color-sidebar: hsl(var(--sidebar));
+	--color-success: hsl(var(--success));
+	--color-danger: hsl(var(--danger));
+	--color-warning: hsl(var(--warning));
+	--color-ring: hsl(var(--ring));
+	--font-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto,
+		'Helvetica Neue', Arial, sans-serif;
+	--radius: 0.65rem;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background-color: hsl(var(--background));
+	color: hsl(var(--foreground));
+	font-family: var(--font-sans);
+	-webkit-font-smoothing: antialiased;
+}
+
+* {
+	border-color: hsl(var(--border));
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+::-webkit-scrollbar-thumb {
+	background: hsl(var(--border));
+	border-radius: 6px;
+}

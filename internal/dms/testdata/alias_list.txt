@@ -1,0 +1,5 @@
+* sales@example.com admin@example.com
+
+* postmaster@example.com admin@example.com
+
+* info@example.com admin@example.com

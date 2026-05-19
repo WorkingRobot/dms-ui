@@ -1,0 +1,6 @@
+All messages=0 vsize=0
+Trash messages=139 vsize=6065609
+Sent messages=48 vsize=14089683
+Drafts messages=0 vsize=0
+Junk messages=89 vsize=9841943
+INBOX messages=10806 vsize=466335898

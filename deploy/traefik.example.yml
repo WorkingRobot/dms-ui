@@ -1,0 +1,33 @@
+# Example Traefik dynamic configuration putting dms-ui behind Authentik
+# forward-auth. dms-ui has no auth of its own, so the forwardAuth middleware
+# in front is mandatory. Point the outpost address at your Authentik server
+# and adjust the certResolver / entryPoint to match your Traefik setup.
+
+http:
+  middlewares:
+    authentik:
+      forwardAuth:
+        address: http://authentik-server:9000/outpost.goauthentik.io/auth/traefik
+        trustForwardHeader: true
+        # Authentik returns the identity on these headers; dms-ui reads the
+        # email one (PROXY_EMAIL_HEADER=X-authentik-email).
+        authResponseHeaders:
+          - X-authentik-username
+          - X-authentik-email
+
+  routers:
+    dms-ui:
+      rule: "Host(`dms-ui.example.com`)"
+      entryPoints:
+        - websecure
+      middlewares:
+        - authentik
+      service: dms-ui
+      tls:
+        certResolver: letsencrypt
+
+  services:
+    dms-ui:
+      loadBalancer:
+        servers:
+          - url: http://dms-ui:8080

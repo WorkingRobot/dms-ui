@@ -1,0 +1,9 @@
+store@example.com 		 REJECT
+git@example.com 		 REJECT
+media@example.com 		 REJECT
+metrics@example.com 		 REJECT
+social@example.com 		 REJECT
+photos@example.com 		 REJECT
+chat@example.com 		 REJECT
+auth@example.org 		 REJECT
+code@example.org 		 REJECT

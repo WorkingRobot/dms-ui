@@ -1,0 +1,21 @@
+amavis                           STOPPED   Not started
+changedetector                   RUNNING   pid 292, uptime 11 days, 2:04:02
+clamav                           STOPPED   Not started
+cron                             RUNNING   pid 139, uptime 11 days, 2:04:04
+dovecot                          RUNNING   pid 149, uptime 11 days, 2:04:04
+fail2ban                         RUNNING   pid 221, uptime 11 days, 2:04:03
+fetchmail                        STOPPED   Not started
+getmail                          STOPPED   Not started
+mailserver                       RUNNING   pid 8, uptime 11 days, 2:04:05
+mta-sts-daemon                   STOPPED   Not started
+opendkim                         STOPPED   Not started
+opendmarc                        STOPPED   Not started
+postfix                          RUNNING   pid 190, uptime 11 days, 2:04:03
+postgrey                         STOPPED   Not started
+postsrsd                         STOPPED   Not started
+rspamd                           RUNNING   pid 184, uptime 11 days, 2:04:03
+rspamd-redis                     STOPPED   Not started
+rsyslog                          RUNNING   pid 143, uptime 11 days, 2:04:04
+saslauthd_ldap                   STOPPED   Not started
+saslauthd_rimap                  STOPPED   Not started
+update-check                     RUNNING   pid 158, uptime 11 days, 2:04:04

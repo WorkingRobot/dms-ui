@@ -1,0 +1,6 @@
+web/node_modules
+web/.svelte-kit
+.git
+*.md
+deploy
+/tmp

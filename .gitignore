@@ -1,0 +1,19 @@
+# Go
+/dms-ui
+*.test
+
+# Node / SvelteKit
+web/node_modules/
+web/.svelte-kit/
+web/build/
+
+# The frontend is built at image/build time. Keep only a placeholder
+# index.html committed so //go:embed always has something to embed; ignore
+# every generated artifact.
+internal/web/dist/*
+!internal/web/dist/.gitkeep
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/

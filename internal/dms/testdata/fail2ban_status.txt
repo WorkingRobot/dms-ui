@@ -1,0 +1,30 @@
+Status for the jail: custom
+|- Filter
+|  |- Currently failed:	0
+|  |- Total failed:	0
+|  `- File list:	
+`- Actions
+   |- Currently banned:	0
+   |- Total banned:	0
+   `- Banned IP list:	
+
+Status for the jail: dovecot
+|- Filter
+|  |- Currently failed:	0
+|  |- Total failed:	128
+|  `- File list:	/var/log/mail.log
+`- Actions
+   |- Currently banned:	20
+   |- Total banned:	44
+   `- Banned IP list:	81.30.98.194 81.30.98.207 81.30.98.201 81.30.98.174 81.30.98.33 81.30.98.181 81.30.98.90 81.30.98.142 81.30.98.62 81.30.98.158 81.30.98.47 81.30.98.32 81.30.98.53 81.30.98.84 81.30.98.144 81.30.98.52 81.30.98.49 81.30.98.44 81.30.98.66 81.30.98.77
+
+Status for the jail: postfix
+|- Filter
+|  |- Currently failed:	59
+|  |- Total failed:	315
+|  `- File list:	/var/log/mail.log
+`- Actions
+   |- Currently banned:	27
+   |- Total banned:	59
+   `- Banned IP list:	66.132.224.89 165.22.75.100 81.30.98.194 165.227.130.62 81.30.98.207 81.30.98.201 81.30.98.174 81.30.98.33 81.30.98.181 152.32.145.49 3.131.220.121 81.30.98.90 81.30.98.142 81.30.98.62 81.30.98.158 81.30.98.47 81.30.98.32 81.30.98.53 81.30.98.84 81.30.98.144 81.30.98.52 81.30.98.49 81.30.98.44 81.30.98.66 81.30.98.77 80.94.95.7 3.130.168.2
+
