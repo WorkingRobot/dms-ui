@@ -11,6 +11,8 @@ jobs:
     permissions:
       contents: read
       packages: write
+      id-token: write
+      attestations: write
 
     steps:
       - name: Checkout
@@ -36,10 +38,6 @@ jobs:
             type=edge
             type=ref,event=branch
 
-      # NOTE: actions/attest-build-provenance is intentionally omitted.
-      # GitHub Artifact Attestations are unavailable for private repos owned
-      # by a user account (this repo is private). Re-add the attest step if
-      # the repo is ever made public or moved under an organization.
       - name: Build and push image
         id: push
         uses: docker/build-push-action@v5
@@ -49,3 +47,10 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
+
+      - name: Attest build provenance
+        uses: actions/attest-build-provenance@v2
+        with:
+          subject-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          subject-digest: ${{ steps.push.outputs.digest }}
+          push-to-registry: true
